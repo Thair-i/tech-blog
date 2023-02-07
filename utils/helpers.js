@@ -1,6 +1,12 @@
-module.exports = {
-    format_date: date => {
-        return `${new Date(date).getDate()}/${new Date(date).getMonth() + 1}/${new Date(date).getFullYear()}`;
-      },
+const checkInputs = (user_name, password) => {
+  if (user_name == "") {
+      alert('please enter a username');
+  }
 
+  if (password == "") {
+      alert('please enter a password');
+  }
 }
+
+
+module.exports = checkInputs;
